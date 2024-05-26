@@ -15,7 +15,7 @@ section > .container {
   gap: 1px;
   margin: 0px;
 }
-#error-email {
+#check-email {
   color: red;
   font-weight: 700;
 }
@@ -40,7 +40,12 @@ section > .container {
   grid-template-rows: auto auto auto;
   text-align: center;
   color: rgb(236, 236, 236);
+  font-size: xx-large;
 }
+.icon-mail-alt.icon-user.icon-doc-text-inv .icon-mail-alt.icon-star-1 {
+  font-size: xx-large;
+}
+
 .info-nav1 {
   grid-row: 2 / 3;
 }
@@ -85,8 +90,7 @@ section > .container {
 }
 
 /* none view more*/
-.View-more,
-.Less-more {
+.View-more {
   display: none;
 }
 .container-info {
