@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 567px) {
   * {
     margin: 0px;
   }
@@ -11,12 +11,12 @@
     margin: auto;
   }
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+
     gap: 1px;
     margin: 0px;
   }
-  #error-email {
+  #check-email {
     color: red;
     font-weight: 700;
   }
@@ -42,6 +42,9 @@
     text-align: center;
     color: rgb(236, 236, 236);
   }
+  .icon-mail-alt.icon-user.icon-doc-text-inv .icon-mail-alt.icon-star-1 {
+    font-size: xx-large;
+  }
   .info-nav1 {
     grid-row: 2 / 3;
   }
@@ -50,6 +53,7 @@
     grid-row: 2 / 3;
   }
   .info-nav3 {
+    display: none;
     grid-row: 2 / 3;
     grid-column: 3/3;
   }
@@ -92,8 +96,8 @@
   }
   .container-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   .container-info > div {
     background-color: rgba(255, 255, 255, 0.8);
