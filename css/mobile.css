@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   * {
     margin: 0px;
   }
@@ -11,12 +11,12 @@
     margin: auto;
   }
   .container {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
     margin: 0px;
   }
-  #error-email {
+  #check-email {
     color: red;
     font-weight: 700;
   }
@@ -34,32 +34,31 @@
     padding: 20px;
   }
   .container-nav {
-    display: grid;
+    display: block;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    font-size: small;
     text-align: center;
     color: rgb(236, 236, 236);
   }
-  .info-nav1 {
-    grid-row: 2 / 3;
+  .icon-mail-alt.icon-user.icon-doc-text-inv .icon-mail-alt.icon-star-1 {
+    font-size: x-small;
   }
+  .info-nav1 {
+    display: block;
+  }
+
   .info-nav2 {
-    grid-column: 2/2;
-    grid-row: 2 / 3;
+    display: block;
   }
   .info-nav3 {
-    grid-row: 2 / 3;
-    grid-column: 3/3;
+    display: none;
   }
   .info-nav4 {
-    grid-row: 2 / 3;
-    grid-column: 4/4;
+    display: block;
   }
   .info-nav5 {
-    grid-row: 2 / 3;
-    grid-column: 5/5;
+    display: block;
   }
   .nav-bar a {
     color: #080808;
@@ -91,9 +90,7 @@
     display: none;
   }
   .container-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: block;
   }
   .container-info > div {
     background-color: rgba(255, 255, 255, 0.8);
@@ -126,7 +123,7 @@
     padding: 2px;
   }
   .container-info-2 {
-    display: grid;
+    display: block;
     border: solid #199cdb;
     border-radius: 50%;
     box-shadow: 0.2em 0.2em 0 0 white;
@@ -141,7 +138,7 @@
   }
 
   .hobby {
-    display: grid;
+    display: block;
     grid-template-columns: 20% 20% 20% 20%;
 
     justify-content: center;
@@ -162,9 +159,8 @@
     width: 45px;
   }
   .certificate {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr;
+    display: block;
+
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -190,9 +186,8 @@
     padding-top: 40px;
   }
   .project {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-row: auto auto auto auto;
+    display: block;
+
     justify-content: center;
 
     align-content: center;
