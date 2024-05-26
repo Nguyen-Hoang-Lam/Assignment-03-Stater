@@ -30,7 +30,9 @@ function handleOnMouseOver(element) {
 }
 function handleOnMouseOut(element) {
   const viewMore = element.querySelector(".View-more");
-  viewMore.style.display = "none";
+  if (!viewMore.classList.value.includes("Less more")) {
+    viewMore.style.display = "none";
+  }
 }
 function handleViewMore(element) {
   const parentElement = element.closest(".parent");
@@ -41,12 +43,14 @@ function handleViewMore(element) {
     sectionContent.forEach((element) => {
       element.style.display = "block";
     });
+
     viewMore.innerHTML = "Less more";
   } else {
     const sectionContent = parentElement.querySelectorAll(".section-Content");
     sectionContent.forEach((element) => {
       element.style.display = "none";
     });
-    viewMore.innerHTML == "View more";
+
+    viewMore.innerHTML = "View more";
   }
 }
